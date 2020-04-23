@@ -3,10 +3,10 @@ import { View, Text } from 'react-native';
 
 // import { Container } from './styles';
 
-export default function goals() {
+export default function Profile() {
     return (
         <View>
-            <Text>alguma cois aai</Text>
+            <Text>detalhes de perfil</Text>
         </View>
     );
 }
