@@ -1,20 +1,12 @@
 import React from 'react';
-import { View, Text, Button, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import ActionButton from 'react-native-action-button';
 
-// import { Container } from './styles';
+import { Container } from './styles';
 
 export default function Dashboard({ navigation }) {
     return (
-        <View
-            style={{
-                flex: 1,
-                justifyContent: 'center',
-                alignItems: 'center',
-                padding: 20,
-                backgroundColor: '#fff',
-            }}
-        >
+        <Container>
             <Text style={{ fontSize: 22, marginBottom: 15 }}>
                 Goals and Wishes
             </Text>
@@ -63,6 +55,6 @@ export default function Dashboard({ navigation }) {
                 buttonColor="#63a79c"
                 onPress={() => navigation.navigate('Create')}
             />
-        </View>
+        </Container>
     );
 }
